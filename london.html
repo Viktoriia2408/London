@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лондон</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .intro {
+        height: 100vh;
+        background: url("london.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+        text-align: center;
+      }
+
+      nav {
+        position: absolute;
+        top: 500px;
+        left: 0;
+        width: 100%;
+        /* display: flex; */
+        justify-content: center;
+        gap: 20px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .intro h1 {
+        font-size: 50px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      h2 {
+        margin-top: 70px;
+      }
+      section {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        padding: 40px;
+        max-width: 1000px;
+        margin: 60px auto;
+      }
+
+      section img {
+        width: 50%;
+        border-radius: 12px;
+      }
+
+      .block-text {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+      <h1>Ласкаво просимо до Лондона!</h1>
+      <nav>
+        <a href="#">Історія</a>
+        <a href="#memories">Пам’ятки</a>
+        <a href="#">Цікаві факти</a>
+      </nav>
+    </div>
+
+    <h2 id="memories" align="center">Пам’ятки міста</h2>
+    <section>
+      <img src="bridge.cms" alt="Лондонський міст" />
+      <div class="block-text">
+        <h2>📍 Лондонський міст</h2>
+        <p>
+          Лондонський міст — один із найвідоміших символів міста. Він був
+          побудований у 1894 році та з'єднує два береги Темзи. Міст
+          відкривається для проходу кораблів, і це справжнє видовище для
+          туристів!
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="block-text">
+        <h2>📍 Лондонський міст</h2>
+        <p>
+          Лондонський міст — один із найвідоміших символів міста. Він був
+          побудований у 1894 році та з'єднує два береги Темзи. Міст
+          відкривається для проходу кораблів, і це справжнє видовище для
+          туристів!
+        </p>
+      </div>
+      <img src="bridge.cms" alt="Лондонський міст" />
+    </section>
+  </body>
+</html>
